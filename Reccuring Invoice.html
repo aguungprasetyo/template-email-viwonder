@@ -3,23 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Reccuring Invoice</title>
+  <title>Your Reccuring Invoice</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
   <style>
+    
     @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
-    body {
-      font-family: "Plus Jakarta Sans",Arial, sans-serif;
-      font-size: 16px;
-      background-color: #F5F8FE;
-      margin: 0;
-      padding: 0;
-      line-height: 24px;
-    }
+
     .email-container {
       max-width: 594px;
-      margin: 128px auto;
+      margin: 48px auto;
       background-color: #ffffff;
       border-radius: 15px;
       overflow: hidden;
@@ -27,30 +21,36 @@
     .header {
       background-color: #ffffff;
       text-align: left;
-      padding: 50px;
+      padding: 50px 50px 36px;
       margin-bottom: 0;
     }
     .header img {
       height: 36px;
     }
     .content {
-      padding: 0 50px 50px 50px;
+      padding: 0 50px 24px 50px;
     }
     .content h1 {
-      margin: 0 0 15px 0;
-      font-size: 24px;
+      margin: 0 0 12px 0;
+      font-size: 20px;
       line-height: auto;
-
+      color: #3D3B40;
+    }
+    .content h2 {
+      margin: 0;
+      font-size: 14px;
+      line-height: auto;
+      color: #3D3B40;
     }
     .content p {
       margin: 0;
-      font-size: 16px;
-      line-height: 29px;
-      color: #929AAB;
+      font-size: 14px;
+      line-height: 26px;
+      color: #3D3B40;
     }
     .content table {
       width: 100%;
-      margin: 50px 0 0 0;
+      margin: 24px 0 0 0;
       border-spacing: 0;
       border-collapse: separate;
       border-radius:8px;
@@ -62,15 +62,11 @@
       padding: 10px 15px;
       border-bottom: 1px solid #929AAB;
     }
-    .content table tr:last-child th, .content table tr:last-child td {
+    .content .border-none {
       border-bottom: none;
-    }
-    .content table tr:first-child th {
-      border-bottom: 1px solid #929AAB;;
     }
     .content table th {
       background-color: #ECF2FF;
-      color: #333;
     }
     .content .bgnone th {
       background-color: transparent;
@@ -80,16 +76,11 @@
       text-align: left;
       font-weight: bold;
       padding: 10px 15px;
-      background-color: #3D3B40;
+      background-color: #525CEB;
+      border: none;
+    }
+    .content .total p {
       color: #ffffff;
-    }
-    .content .total:first-child {
-      text-align: left;
-      padding-left: 42%;
-    }
-    .content .coupon {
-      text-align: left;
-      padding-left: 42%;
     }
     thead th:nth-child(1) {
       width: 40%;
@@ -102,68 +93,63 @@
       padding: 0 50px 50px 50px;
       color: #929AAB;
     }
-    .footer p:first-child {
+    .footer p {
       margin: 0;
       padding-bottom: 20px;
-      line-height: 29px;
-    }
-    .footer p:last-child {
-      margin: 0;
-      line-height: 29px;
+      font-size: 14px;
+      line-height: 26px;
     }
   </style>
 </head>
-<body>
+<body style="font-family: 'Plus Jakarta Sans',Arial, sans-serif; background-color: #F5F8FE; margin: 0; padding: 0;">
   <div class="email-container">
     <div class="header">
       <img src="./src/Logo viwonder6 1.svg" alt="ViWonder.ai Logo">
     </div>
     <div class="content">
       <h1>Your Reccuring Invoice</h1>
-      <p>This is a friendly reminder regarding your upcoming recurring invoice from your current plan. Below are the details:</p>
+      <p>This is a friendly reminder regarding your upcoming recurring invoice from your current plan. Below are the details :</p>
 
       <div class="bgnone">
         <table>
           <tr>
-            <th>Plan</th>
-            <td>Monthly</td>
+            <th><h2>Plan</h2></th>
+            <td><p>Monthly</p></td>
           </tr>
           <tr>
-            <th>Order ID</th>
-            <td>012345</td>
+            <th><h2>Order ID</h2></th>
+            <td><p>012345</p></td>
           </tr>
           <tr>
-            <th>Due date</th>
-            <td>Jan 15, 2025</td>
+            <th><h2>Due date</h2></th>
+            <td><p>Jan 15, 2025</p></td>
           </tr>
           <tr>
-            <th>Customer name</th>
-            <td>Anna Wong</td>
+            <th><h2>Customer name</h2></th>
+            <td><p>Anna Wong</p></td>
           </tr>
           <tr>
-            <th>Customer email</th>
-            <td>anna_wong@hit-pay.com</td>
+            <th><h2>Customer email</h2></th>
+            <td><p>anna_wong@hit-pay.com</p></td>
           </tr>
           <tr>
-            <th>Billing cycle</th>
-            <td>Monthly</td>
+            <th><h2>Billing cycle</h2></th>
+            <td><p>Monthly</p></td>
           </tr>
           <tr>
-            <th>Bills total</th>
-            <td>IDR 750,000</td>
+            <th><h2>Ammount</h2></th>
+            <td><p>IDR 750,000</p></td>
           </tr>
           <tr>
-            <th>Coins</th>
-            <td>1,000</td>
+            <th class="border-none"><h2>Coin amount</h2></th>
+            <td class="border-none"><p>1,000</p></td>
           </tr>
-          
         </table>
       </div>
-
     </div>
     <div class="footer">
       <p>
-        If you have any questions or require assistance, please don't hesitate to contact our <a href="info@viwonder.ai">customer support</a>.
+        If you have any questions or require assistance, please don't hesitate to contact our <a href="info@viwonder.ai" style="color: #525CEB; font-weight: 600;">customer support</a>.
       </p>
       <p>
         Thank you for using ViWonder.ai
