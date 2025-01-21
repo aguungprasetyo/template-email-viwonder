@@ -12,10 +12,10 @@
     @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
     .email-container {
-      max-width: 594px;
+      max-width: 540px;
       margin: 48px auto;
       background-color: #ffffff;
-      border-radius: 15px;
+      /* border-radius: 15px; */
       overflow: hidden;
     }
     .header {
@@ -59,7 +59,7 @@
     }
     .content table th, .content table td {
       text-align: left;
-      padding: 10px 15px;
+      padding: 8px 16px;
       border-bottom: 1px solid #929AAB;
     }
     .content .border-none {
@@ -77,6 +77,7 @@
       font-weight: bold;
       padding: 10px 15px;
       background-color: #525CEB;
+      color: #ffffff;
       border: none;
     }
     .content .total p {
@@ -85,8 +86,11 @@
     thead th:nth-child(1) {
       width: 40%;
     }
+    thead th:nth-child(2) {
+      width: 20%;
+    }
     thead th:nth-child(3) {
-      width: 35%;
+      width: 40%;
     }
     .footer {
       text-align: left;
@@ -98,6 +102,21 @@
       padding-bottom: 20px;
       font-size: 14px;
       line-height: 26px;
+    }
+    @media only screen and (max-width: 360px) {
+      .email-container {
+        width: 100% !important;
+        height: 100% !important;
+      }
+      .header {
+        padding: 16px 16px 36px;
+      }
+      .content {
+        padding: 0 16px 8px 16px;
+      }
+      .footer {
+        padding: 0 16px 16px 16px;
+      }
     }
   </style>
 </head>
